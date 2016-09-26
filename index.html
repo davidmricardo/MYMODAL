@@ -11,17 +11,37 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/modal.css" rel="stylesheet"/>
         <script src="node_modules/jquery/dist/jquery.js"></script>
-        <script src = "js/jquery-ui.js"></script>
+        <script src = "node_modules/jquery-ui-dist/jquery-ui.js"></script>
 
-<link rel="stylesheet" type="text/css" 
-	href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css"/>
+        <link rel="stylesheet" type="text/css" href="node_modules/jquery-ui-dist/jquery-ui.css"/>
         <script src="js/mymodal.js"></script>
     </head>
     <body>
+        <h1># MYMODAL</h1>
+        <p>popups generator</p>
+
+        <h1># Description</h1>
+
+<p>This component allows you to make your own popups.
+    This popups can be as simple as a dialog window to pass same information to the user or can be complex and have a form capable of capture information you can recover after the user closes the form.</p>
+
+<h1># Usage</h1>
+
+<p>The component have the following parameters:</p>
+<table>
+    <tr><td>Dialog.content </td><td>-></td><td> the html corresponding to your dialog</td></tr>
+    <tr><td>Dialog.title </td><td>-></td><td> the title that should appear in the dialog</td></tr>
+    <tr><td>Dialog.delay </td><td>-></td><td> a timer to animate the appearance of the dialog. It defaults to 500 miliseconds.</td></tr>
+    <tr><td>Dialog.valuedFields </td><td>-></td><td> an array with the ids of the fields which value you want to capture.</td></tr>
+    <tr><td>Dialog.retVal </td><td>-></td><td> an object returned after the user click in the button you define as ok button. The fields of this object are the ones specified in Dialog.valuedFields</td></tr>
+    <tr><td>Dialog.onOk </td><td>-></td><td> a function to be invoked when the user presses the button defined as ok button.</td></tr>
+    <tr><td>Dialog.OK_ID </td><td>-></td><td> the id of the ok button</td></tr>
+    <tr><td>Dialog.cancel_ID </td><td>-></td><td> the id of the cancel button</td></tr>
+    </table>
         <script>
             
             
-            var dialog=new MYMODAL.MyModal();
+            var dialog=new MYMODAL.Dialog();
             dialog.title="TESTE";
             dialog.content="<form> \
                             <br><label for='nomeCampo'>Introduza o nome do campo</label> \

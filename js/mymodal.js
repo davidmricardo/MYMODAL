@@ -7,13 +7,18 @@
 MYMODAL=(function(){
         function MYMODAL(){
 
-this.MyModal = function ()
+this.Dialog = function ()
 {
     this.content;
     this.title;
     this.template;
     this.id=Date.now();
     this.delay=500;
+    this.valuedFields;
+    this.retVal={};
+    this.onOk;
+    this.OK_ID;
+    this.cancel_ID;
     this.showInfo=function () {
         setBackgroundsize();
         self=this;
@@ -50,11 +55,7 @@ this.MyModal = function ()
         $("#info_"+this.id).hide();
         $("#infobackground_"+this.id).hide();
     };
-    this.valuedFields;
-    this.retVal={};
-    this.onOk;
-    this.OK_ID;
-    this.cancel_ID;
+    
     this.modalOK = function () {
         for(var i=0;i<this.valuedFields.length;i++)
         {
