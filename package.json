@@ -1,7 +1,7 @@
 {
-    "name": "myproject",
+    "name": "MYMODAL",
     "version": "1.0.0",
-    "keywords": ["util", "functional", "server", "client", "browser"],
+    "keywords": ["util", "popup", "custom", "dialog", "forms"],
     "author": "david",
     "contributors": [],
     "dependencies": {
