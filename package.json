@@ -1,8 +1,15 @@
 {
     "name": "MYMODAL",
     "version": "1.0.0",
+    "description":"popup generator",
+    "main":"js/mymodal.js",
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidmricardo/MYMODAL.git"
+        },
     "keywords": ["util", "popup", "custom", "dialog", "forms"],
-    "author": "david",
+    "author": "davidmricardo",
+    "License": "MIT",
     "contributors": [],
     "dependencies": {
         "jquery": "^3.1.0",
