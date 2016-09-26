@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>My Modal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/modal.css" rel="stylesheet"/>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src = "js/jquery-ui.js"></script>
+
+<link rel="stylesheet" type="text/css" 
+	href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css"/>
+        <script src="js/mymodal.js"></script>
+    </head>
+    <body>
+        <script>
+            
+            
+            var dialog=new MYMODAL.MyModal();
+            dialog.title="TESTE";
+            dialog.content="<form> \
+                            <br><label for='nomeCampo'>Introduza o nome do campo</label> \
+                            <br><input id='nomeCampo'></input> \
+                            <br><label for='tipoCampo'>Introduza o tipo de dados do campo</label> \
+                            <br><input id='tipoCampo'></input> \
+                            <br><button type='button' id='okbutton'>OK</button><button type='button' id='cancelbutton'>Cancel</button> \
+                            </form>";
+            dialog.valuedFields=['nomeCampo', 'tipoCampo'];
+            dialog.OK_ID="okbutton";
+            dialog.cancel_ID="cancelbutton";
+            dialog.onOk=function()
+            {
+                console.log(dialog.retVal);
+            };
+            dialog.init();
+            dialog.showInfo();
+            
+            
+        </script>
+    </body>
+</html>
