@@ -103,8 +103,8 @@ function setBackgroundsize() {
     });
     
     $(".info").css({
-        "left": windowsize[0] / 2 - 500 / 2,
-        "top": windowsize[1] / 2 - 600 / 2
+        "left": windowsize[0] / 2,/* - 500 / 2,*/
+        "top": windowsize[1] / 2,/* - 600 / 2*/
     });
 }
 
